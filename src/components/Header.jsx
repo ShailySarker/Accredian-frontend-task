@@ -21,7 +21,7 @@ const Header = () => {
     };
 
     return (
-        <div className='sticky top-0 lg:shadow-none shadow-md'>
+        <div className='z-50 bg-white sticky top-0 lg:shadow-none shadow-md'>
             <div className='xl:text-[17px] lg:text-base md:text-sm text-[12.5px] font-medium bg-[#1A73E826] flex flex-row items-center md:justify-center justify-between xl:gap-4 lg:gap-3 md:gap-[10px] gap-3 xl:py-4 lg:py-3 md:py-[10px] py-[6px] md:px-0 px-3'>
                 <p className='text-[#262626]'>Navigate your ideal career path with tailored expert advice</p>
                 <p className='text-[#1A73E8] cursor-pointer  md:font-semibold font-bold md:w-auto w-32'>Contact Expert</p>
