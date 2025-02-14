@@ -2,24 +2,31 @@ import React, { useState } from "react";
 
 const ReferModal = () => {
     const [modalOpen, setModalOpen] = useState(false);
-    const handleModal = () => {
-        setModalOpen(true);
-    };
-    const handleCloseModal = () => {
-        setModalOpen(false);
-    };
-
     const [formData, setFormData] = useState({
         referrerName: "",
         referrerEmail: "",
         refereeName: "",
         refereeEmail: "",
     });
+    const handleModal = () => {
+        setModalOpen(true);
+    };
+    const handleCloseModal = () => {
+        setModalOpen(false);
+        setFormData({
+            referrerName: "",
+            referrerEmail: "",
+            refereeName: "",
+            refereeEmail: "",
+        })
+    };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/refer", {
+            console.log(formData)
+            const response = await fetch("https://accredian-backend-task-2s71.onrender.com/referral", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -27,9 +34,23 @@ const ReferModal = () => {
             const result = await response.json();
             console.log(result);
             alert("Referral submitted successfully!");
+            setModalOpen(false);
+            setFormData({
+                referrerName: "",
+                referrerEmail: "",
+                refereeName: "",
+                refereeEmail: "",
+            });
         } catch (error) {
             console.error("Error:", error);
             alert("An error occurred");
+            setModalOpen(false);
+            setFormData({
+                referrerName: "",
+                referrerEmail: "",
+                refereeName: "",
+                refereeEmail: "",
+            });
         }
     };
 
