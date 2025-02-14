@@ -1,5 +1,6 @@
 import Banner from "./Components/Banner";
 import Benefits from "./Components/Benefits";
+import FAQs from "./Components/FAQs";
 import Refer from "./Components/Refer";
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
             <Banner />
             <Refer />
             <Benefits />
+            <FAQs/>
         </div>
     );
 };
