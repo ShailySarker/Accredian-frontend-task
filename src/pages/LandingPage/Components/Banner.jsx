@@ -3,6 +3,7 @@ import money from "../../../assets/Image/LandingPage/Banner_money.png";
 import money1 from "../../../assets/Image/LandingPage/Banner_money1.png";
 import money2 from "../../../assets/Image/LandingPage/Banner_money2.png";
 import money3 from "../../../assets/Image/LandingPage/Banner_money3.png";
+import ReferModal from "../../../components/ReferModal";
 
 const Banner = () => {
     return (
@@ -17,7 +18,7 @@ const Banner = () => {
                         <h1 className="text-[#1A202C] xl:text-[75px]/none lg:text-[65px]/none md:text-4xl text-[23.6px] font-bold">Let’s Learn <br className="lg:block hidden" />& Earn</h1>
                         <p className="text-[#1A202C] xl:text-[35.1px]/snug lg:text-[26px]/snug md:text-[19px]/snug text-[16.5px] lg:text-start text-center">Get a chance to win <br className="lg:block hidden" />
                             up-to <span className="text-[#1A73E8] font-bold xl:text-5xl lg:text-3xl md:text-2xl text-xl"><br className="lg:hidden visible" />Rs. 15,000</span></p>
-                        <button className='bg-[#1A73E8] xl:py-[10px] lg:py-2 py-[6px] text-white rounded-md xl:px-12 lg:px-10 md:px-8 px-6 font-medium xl:text-base lg:text-[15px] md:text-[14.5px] text-[12.5px] lg:mt-0 md:mt-4 mt-5'>Refer Now</button>
+                        <ReferModal />
                     </div>
                     <div className="lg:hidden visible flex flex-col justify-between">
                         <img className="rounded-l-2xl lg:hidden visible md:w-[105px] w-[68px] " src={money2} alt="money2" />
