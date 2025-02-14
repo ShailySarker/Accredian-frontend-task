@@ -1,10 +1,12 @@
+import Banner from "./Components/Banner";
+import Benefits from "./Components/Benefits";
 
 const LandingPage = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
+        <div className=" ">
+            {/* xl:px-24 lg:px-16 md:px-10 px-5 */}
+            <Banner />
+            <Benefits />
         </div>
     );
 };

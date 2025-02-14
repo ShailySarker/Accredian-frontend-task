@@ -26,7 +26,7 @@ const Header = () => {
                 <p className='text-[#262626]'>Navigate your ideal career path with tailored expert advice</p>
                 <p className='text-[#1A73E8] cursor-pointer  md:font-semibold font-bold md:w-auto w-32'>Contact Expert</p>
             </div>
-            <div className="xl:px-24 lg:px-16 md:px-10 px-5 xl:py-5 lg:py-[14px] md:py-4 py-4 flex justify-between">
+            <div className="xl:px-24 lg:px-16 md:px-10 px-5 xl:py-5 lg:py-[14px] md:py-4 py-[14px] flex justify-between">
                 <div className='flex items-center xl:gap-8 lg:gap-6'>
                     <img className="xl:w-32 md:w-28 w-24" src={companyLogo} alt="companyLogo" />
                     <select className='lg:block hidden bg-[#1A73E8] xl:py-2 lg:py-[6px] text-white rounded-md px-2 w-24 cursor-pointer'>
